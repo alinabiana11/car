@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2;
+  }
+  
+  .car {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background-color: #ff0080;
+    border-radius: 0px;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: moveCar 4s forwards;
+  }
+  
+  @keyframes moveCar {
+    100% {
+      left: calc(100% - 50px - 200px);
+    }
+  }
+  
+
+  .car-window {
+    position: absolute;
+    top: 20px;
+    width: 30px;
+    height: 40px;
+    background-color: #c8c8c8;
+    
+  }
+  
+  .car-window-left {
+    left: 50px;
+  }
+  
+  .car-window-right {
+    right: 30px;
+  }
+  
+  .wheel {
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 50%;
+    transform: translateY(50%);
+  }
+  
+  .wheel-front {
+    left: 20px;
+  }
+  
+  .wheel-back {
+    right: 20px;
+  }
